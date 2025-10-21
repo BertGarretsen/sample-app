@@ -69,6 +69,6 @@ jobs:
         with:
           tag_name: v${{ steps.version.outputs.version }}
           name: Release v${{ steps.version.outputs.version }}
-          files: myapp-v${{ steps.version.outputs.version }}.zip
+          files: sample-app-v${{ steps.version.outputs.version }}.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
